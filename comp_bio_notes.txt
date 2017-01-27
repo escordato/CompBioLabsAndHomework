@@ -1,0 +1,42 @@
+comp bio notes
+
+class 3: git
+
+anything that starts with a . is hidden
+
+start git: git init
+
+creates new directory called .git
+git add filename #stages a file
+git add * #stages everything
+
+## this means files are ready for a commit
+## commit permanenly saves a snapshot of your work to return to
+
+git commit -m "message" #-m is the message flag
+
+git is monitoring your changes, not copies of everything
+
+HEAD is the most recent commit- also the top commit in the stack
+
+HEAD~1 is the penultimate commit, HEAD~2 is 2 commits ago, etc
+
+easiest way to id recent commits if you need to go back
+
+hash- unique identifiers of each commit, use first 7 characters to call it
+
+git diff- where are you right now wrt most recent commit
+
+git diff HEAD~N filename
+- compare specific file with what it was at a commit with the given id
+
+git log is your history
+
+git checkout filename # goes back to last commit, loses all the changes
+
+git checkout HEAD~N filename ## goes back to last version even though you've already committed stuff
+
+git revert #undoes commits
+
+
+
