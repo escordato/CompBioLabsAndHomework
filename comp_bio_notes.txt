@@ -39,4 +39,132 @@ git checkout HEAD~N filename ## goes back to last version even though you've alr
 git revert #undoes commits
 
 
+# info on changing carriage returns on github pres
+
+c and c++ are compiled- they make standalone executables
+
+scripting languages are interpreted by an interpreter on your computer
+
+script vs. program: script is something an interpreter evaluates, a program is a more formal, standalone executable
+
+terminal: better w/ files 
+R: better w/ numbers/characters stored in variables
+
+
+
+## looping constructs
+
+initial conditions/inputs -->
+for a given number of times,
+repeat some action or sequence of actions
+--> ending conditions/outputs
+
+- implies a counter variable keeping track of counter variable and condition for exiting the loop
+
+3 basic components:
+
+1. counter or index variables
+2. specification of range of values for the counter
+    - actions of loop are carried out once and exactly once for each values
+    - repetition then ceases
+3. action or sequence of actiosn taken while insde the looop
+
+
+for (i in seq(1,10)){
+    print("hi")
+}
+
+curly braces optional if only a single action
+
+# recursive operations: next step requires previous step
+
+tot<-0
+for (k in seq(1,15)){
+tot<-tot+k ## recursive part that adds to previous step
+print(tot)
+}
+
+for (y in c("a","b","c"){
+print(y)
+}
+
+## range of values needs to be a one-dimensional vector- cannot say "for i in dataframe"
+- must be a vector
+
+# combine for loops w/ array indexing is key to unlocking big data universe
+
+
+## make all odd indexes negative
+bigArray<-seq(100,205)
+numElements<-length(bigArray)
+oddIndexes<-seq(from=1, to=numElements, by=2)
+for(i in oddIndexes){
+newBigArray[i]<-bigArray[i]
+}
+
+plot(newBigArray)
+
+##
+pre-allocation
+-make an object of the rigth dimesions to store your data BEFOR you need it
+- how big is it? how many dimensions?
+
+how do you do this?
+- use rep(...) or vector(...) or matrix(...) or... and then store results in a new variable
+
+use variables (not numbers) inside commands to make objects
+
+
+
+### class march 7
+
+adjacency matrix
+each cell is an individual
+
+how to map matrix values to pre allocate matrix
+
+index across matrices with nested for loops, need an index that keeps track of your rows
+
+# authoring with reproducibility in mind
+
+optimally structured data files
+
+- easy to get what you want
+- context of data point
+- associate a given data point with all the relevant info that goes with it
+- numbers look like numbers, etc
+
+meta-data
+
+plain text
+
+meta-scripting
+
+sink()
+make a script of parameter values
+
+eg sink("paramters.R")
+redirects console output to a file
+sink() # ends command
+
+using cat instead of print strips away extraneous characters
+
+
+### markdown
+
+lightweight markup language
+create rich format using plain text editor
+you can write it in any plain text editor
+
+all the advantages of text but with the organizational power of a word processor
+a markdown editor lets you see what you're creating in real time
+
+
+
+
+
+
+
+
+
 
